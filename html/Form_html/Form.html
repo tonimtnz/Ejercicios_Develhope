@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Formulario</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+        <section>
+            <label for="email">Introduzca su correo electrónico</label>
+            <input type="email" id="email" placeholder="example@mail.com">
+            <label for="pssw">Contraseña</label>
+            <input type="password" id="pssw">
+        </section>
+        <hr>
+        <section>
+            <label for="name_surname">Introduzca su nombre y apellidos</label>
+            <input type="text" id="name_surname" placeholder="">
+            <label for="birth">Introduzca su fecha de nacimiento</label>
+            <input type="date">
+            <label for="phone_num">Escriba su numero de teléfono</label>
+            <input type="tel" id="phone_num" placeholder="" pattern="[0-9]+">
+        </section>
+        <hr>
+        <label for="plan">Elige tu plan de suscripción</label>
+        <select name="plan" id="plan">
+            <option selected disabled>Elige un plan</option>
+            <option id="free">Socio Free</option>
+            <option id="silver">Socio Plata 20€</option>
+            <option id="gold">Socio de Oro 50€</option>
+            <option id="platinum">Socio Platino 100€</option>
+        </select>
+        
+        <label for="pro_plan">Plan Diamante 125€</label>
+        <input type="checkbox" name="pro_plan">
+
+        <fieldset>
+            <legend>Método de pago</legend>
+            <label for="payment">Introduzca su tarjeta de crédito</label>
+            <input type="number" id="payment" minlength="9" maxlength="26">
+            <label for="cvc">Introduzca su numero secreto</label>
+            <input type="number" id="cvc" maxlength="6">
+            <label for="expire">Fecha de expiracion de la tarjeta</label>
+            <input type="date" id="expire">
+            <label for="adress">Direción de envío</label>
+            <input type="text" id="adess" placeholder="C/ejemplo, 15,10.">
+        </fieldset>
+        <hr>
+        <button>Enviar</button>
+    </form>
+  </body>
+</html>
