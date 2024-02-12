@@ -1,0 +1,18 @@
+:root{
+    --negro : #011212;
+    --ancho : 100px;
+    --alto : 100px;
+    --naranja : #ff8800;
+    --circulo : calc(var(--ancho)/2);
+}
+
+body {
+    background-color: var(--negro);
+}
+
+.ball {
+    width: var(--ancho);
+    height: var(--alto);
+    background-color: var(--naranja);
+    border-radius: var(--circulo);
+}

@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    text-align: justify;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;
+    grid-template-areas: 
+    "verde verde verde"
+    "amarillo roja azul"
+    "amarillo roja azul"
+    "naranja naranja azul";
+}
+section{
+    padding: 2em;
+}
+
+#green{
+    background-color: rgb(189, 247, 102);
+    grid-area: verde;
+}
+#red{
+    background-color: rgb(246, 119, 119);
+    grid-area: roja;
+}
+#red ul{
+    margin: 10%;
+    gap: 4em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    list-style: none;
+}
+#red ul li{
+    background-color: white;
+    width: calc(100vw/20);
+    height: calc(100vh/20);
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#yellow{
+    background-color: rgb(250, 250, 175);
+    grid-area: amarillo;
+}
+#yellow ul{
+    margin: 10%;
+    gap: 4em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    list-style: none;
+}
+#yellow ul li{
+    background-color: white;
+    width: calc(100vw/20);
+    height: calc(100vh/20);
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#blue{
+    background-color: rgb(139, 139, 255);
+    grid-area: azul;
+}
+#orange{
+    background-color: rgb(246, 206, 132);
+    grid-area: naranja;
+}

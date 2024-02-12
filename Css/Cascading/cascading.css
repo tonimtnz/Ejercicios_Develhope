@@ -1,0 +1,53 @@
+body {
+    color: lightslategray;
+  }
+  
+  blockquote {
+    background-color: rgba(0, 12, 24, 0.05);
+  }
+
+  .content1 {
+    border: 1px solid black;
+  }
+  
+  a {
+    border: 1px dashed red;
+  }
+  
+  em {
+    color: darkred;
+  }
+  
+  .variant-em {
+    background-color: greenyellow;
+    font-style: inherit;
+    font-weight: bold;
+  }
+  
+  ul {
+    background-color: unset;
+  }
+  
+  ul li {
+    padding: 16px;
+  }
+  
+  .link1 a {
+    color: inherit;
+    padding: inherit;
+  }
+  
+  .link2 a {
+    color: initial;
+    font-size: initial;
+    padding: initial;
+    font-style: initial;
+    background-color: initial;
+    border: initial;
+  }
+  
+  .link3 a {
+    border: unset;
+    color: unset;
+    text-decoration: unset;
+  }

@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+}
+article{
+    width: 280px;
+}
+
+article > p:first-of-type {
+    justify-content: center;
+    height: 100px;
+    width: 120px;
+}
+section{
+    border: 1px solid grey;
+    padding: 10px;
+}
+section:first-of-type{
+    padding: 0px 0px;
+    background-image: url(icon/imagen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.elgato{
+    width: 100%;
+    height: auto;
+}
+.imagen{
+    width: 280px;
+    height: 200px;
+}
+.links{
+    padding: 20px 10px;
+}
+.links a{
+    margin-right: 15px;
+}

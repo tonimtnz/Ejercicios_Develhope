@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    background-color: #fafbff;
+    width: 100vw;
+    height: 100vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows:max-content;
+    grid-template-areas:
+    "aside navbar navbar navbar"
+    "aside article article article"
+    "aside footer footer footer";
+}
+
+/*Estilos para el movil*/
+@media (max-width: 990px){
+    article img{
+        width: 75vw; 
+    }
+    aside{
+        padding-top: 16px;
+        padding-bottom: 32px;
+    }
+}
+
+
+/*Estilos de la navbar*/
+.navbar{
+    background-color: #234567;
+    grid-column: 2;
+    grid-area: navbar;
+    padding: 8px 16px;
+}
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+    transition: 300ms;
+}
+.navbar a:hover{
+    color: #ff784d;
+}
+
+/*Estilos del aside*/
+aside{
+    background-color: #edefff;
+    width: calc(100vw/4);
+    grid-area: aside;
+}
+aside img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+/*Estilos del Article*/
+article{
+    grid-area: article;
+    padding: 8px 16px;
+}
+article img{
+    min-height: 300px;
+}
+
+
+/*Estilos del footer*/
+footer{
+    padding: 8px 16px;
+    grid-area: footer;
+    background-color: #012345;
+    max-height: fit-content;
+}
+footer form{
+    color: white;
+}
+footer form button{
+    background-color: #ff784d;
+    color: white;
+    transition: 400ms;
+}
+footer form button:hover{
+    background-color: white;
+    color: #ff784d;
+}
