@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+}
+
+.frame{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    width: 400px;
+    height: 400px;
+    
+    background-color: #a2ffae;
+    display: flex;
+}
+
+.circulos{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
+
+.circulo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    border-radius: 50%;
+    background-color: white;
+
+}
+
+.one{
+    width: 200px;
+    height: 200px;
+
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.699);
+
+    transition: all ease-out 1500ms;
+}
+
+.two{
+    width: 125px;
+    height: 125px;
+
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.699);
+
+    transition: all ease-in-out 1000ms;
+}
+
+.three{
+    width: 50px;
+    height: 50px;
+
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.699);
+
+    transition: all ease-out 500ms;
+
+}
+
+.circulos:hover{
+    
+    .one{
+        transform: scale(1.5);
+        transition: all ease-in 500ms;
+
+    }
+    .two{
+        transform: scale(1.5);
+    }
+    .three{
+        transform: scale(1.5);
+        transition: all ease-in 1500ms;
+    }
+}

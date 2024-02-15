@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+
+.frame{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    width: 400px;
+    height: 400px;
+    
+    background-color: #c2ffae;
+}
+
+.burguer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50px;
+    height: 54px;
+
+    border: 1px solid black;
+}
+
+.line{
+    margin: 6px 0;
+    
+    width: 50px;
+    height: 10px;
+
+    background-color: black;
+    border-radius: 3px;
+    transition: all ease-in-out 750ms;
+}
+
+.burguer:hover{
+
+    .first{
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+    
+    .second{
+        background-color: transparent;
+    }
+    
+    .third{
+        transform: translate(0, -18px) rotate(315deg);
+    }
+}

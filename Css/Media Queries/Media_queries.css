@@ -1,0 +1,41 @@
+body{
+    border: 1px solid black;
+}
+.el_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container{
+    position: relative;
+    background-color: rgb(155, 155, 155);
+    border-radius: 5%;
+    width: 300px;
+    height: fit-content;
+    box-shadow: 0px 5px 10px grey;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    font-weight: bold;
+}
+span{
+    display: inline;
+}
+
+.logo{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+img{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
