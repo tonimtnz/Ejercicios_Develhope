@@ -1,0 +1,99 @@
+.toda_la_home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+.la_home{
+    border: 1px solid rgba(128, 128, 128, 0.568);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    gap: 1em;
+    font-size: 0.75rem;
+}
+
+#logo_main{
+    padding: 3rem;
+}
+form{
+    width: fit-content;
+}
+form input{
+    padding: 0.5rem 5rem;
+    padding-left: 0.5rem;
+}
+form button{
+    padding: 0.5rem 7rem;
+    background-color: #4CB5F9;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: inherit;
+}
+
+.data_user{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em
+}
+/*.separador{
+    display: flex;
+    flex-direction: row;
+}
+.linea{
+    border-top: 1px solid grey;
+    border-top: 1px solid grey;
+}*/
+.facebook_loggin{
+    color: blue;
+    text-decoration: none;
+}
+.forgot_pssw{
+    color: rgb(44, 44, 117);
+    text-decoration: none;
+}
+.denuncia{
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 2rem;
+    padding-top: 0;
+    max-width: 85%;
+    color: grey;
+}
+.denuncia a{
+    text-decoration: none;
+    color: rgb(44, 44, 117);
+    transition: ease-in 300ms;
+}
+.denuncia a:hover{
+    text-decoration: underline;
+    transition: ease-out 300ms;
+}
+
+.singin{
+    font-size: 1.25rem;
+    padding: 1rem 0;
+}
+.singin a{
+    text-decoration: none;
+}
+.dwld{
+    font-size: 1.25rem;
+}
+.imagenes_anchor{
+    display:flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+img{
+    max-width: 160px;
+    max-height: 40px;
+}

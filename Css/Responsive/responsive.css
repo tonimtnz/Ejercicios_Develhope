@@ -1,21 +1,29 @@
 body{
     margin: 0;
     background-color: #fafbff;
-    width: 100vw;
-    height: 100vw;
+    width: fit-content;
+    height: fit-content;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows:max-content;
     grid-template-areas:
-    "aside navbar navbar navbar"
-    "aside article article article"
-    "aside footer footer footer";
+    "navbar navbar navbar aside"
+    "article article article aside"
+    "footer footer footer aside";
 }
 
 /*Estilos para el movil*/
 @media (max-width: 990px){
+    body{
+        grid-template-areas:
+        "navbar navbar navbar navbar"
+        "article article article article"
+        "footer footer footer footer"
+        "aside aside aside aside"
+        ;
+    }
     article img{
-        width: 75vw; 
+        width: 100%; 
     }
     aside{
         padding-top: 16px;
@@ -27,9 +35,11 @@ body{
 /*Estilos de la navbar*/
 .navbar{
     background-color: #234567;
-    grid-column: 2;
     grid-area: navbar;
     padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 2ch;
 }
 .navbar a{
     text-decoration: none;
@@ -55,7 +65,8 @@ aside img{
 /*Estilos del Article*/
 article{
     grid-area: article;
-    padding: 8px 16px;
+    padding: 8px 16px; 
+    width: inherit;    
 }
 article img{
     min-height: 300px;
@@ -68,9 +79,14 @@ footer{
     grid-area: footer;
     background-color: #012345;
     max-height: fit-content;
+    max-width: inherit;
 }
 footer form{
     color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 2ch;
+    align-items: center;
 }
 footer form button{
     background-color: #ff784d;
