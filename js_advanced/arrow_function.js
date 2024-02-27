@@ -11,7 +11,7 @@ const div = (a, b) =>{
     return a / b;
 }
 
-const resultado = div(
+const value = div(
     subtr(
         multi(
             sum(2, 4),
@@ -21,5 +21,9 @@ const resultado = div(
     ),
     5
 );
+
+/*const log = function (value) {
+    console.log(value);
+}*/
 
 console.log(resultado);
