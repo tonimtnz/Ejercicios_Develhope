@@ -1,16 +1,12 @@
-function isAdult(person) {
-        if (age < 18){
-            return "Es menor."
-        } else {
-            return firstName + " tiene " + age + " años."
-        }
-  }
+function isAdult({age}){
+    return age >= 18;  
+}
   
   const person = {
     id: 1,
     firstName: 'Mario',
     lastName: 'Rossi',
-    age: 25
+    age: 19
   };
 
   let{ id, firstName, lastName, age} = person
