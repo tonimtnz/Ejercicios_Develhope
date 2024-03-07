@@ -5,7 +5,7 @@ class Person {
     }
 };
 
-class Developer extends Person {
+class Developer extends Person { 
     constructor (firstName, lastName, role) {
         super (firstName, lastName);
         this.role = role;

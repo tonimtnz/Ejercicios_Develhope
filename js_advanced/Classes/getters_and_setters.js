@@ -5,13 +5,13 @@ class Person {
         this.age = age;
     }
     get fullName(){
-        return person.firstName + " " + person.lastName + " " + person.age;
-        /*if (person.age = undefined){
-            return person.firstName + " " + person.lastName;
-        } else{
-            return person.firstName + " " + person.lastName + " " + person.age;
-        }*/
+        return this.firstName + " " + this.lastName;
     }
+
+    get _age(){
+        return this.age;
+    }
+
     set fullName(any){
         any = this.fullName;
         return any;
@@ -19,9 +19,10 @@ class Person {
     
   }
   
-  const person = new Person('Mario', 'Rossi', 25);
-  console.log(person.fullName);
+  //const person = new Person('Mario', 'Rossi', 25);
+  const x = new Person ('Toni', 'Martinez', 25)
+  console.log(x.fullName);
   
-  person.firstName = 'Maria';
-  person.lastName = 'Verdi';
-  console.log(person.fullName);
+  x.firstName = 'Maria';
+  x.lastName = 'Verdi';
+  console.log(x.fullName);

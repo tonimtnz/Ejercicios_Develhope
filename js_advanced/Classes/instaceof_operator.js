@@ -35,9 +35,9 @@ class AreaCalculator{
   const square = new Square(4);
   const rectangle = new Rectangle(4, 2);
   const circle = new Circle(5);
-  //const nosquare = new Square();
+  const nosquare = new Square();
   
   console.log(AreaCalculator.calculate(square));
   console.log(AreaCalculator.calculate(rectangle));
   console.log(AreaCalculator.calculate(circle));
-  //console.log(AreaCalculator.calculate(nosquare));
+  console.log(AreaCalculator.calculate(nosquare));
