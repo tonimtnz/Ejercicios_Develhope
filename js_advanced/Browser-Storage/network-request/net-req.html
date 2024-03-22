@@ -1,0 +1,54 @@
+<html>
+  <body>
+    <div id="container" style="display: flex; align-items: center;">
+    <!-- Aqui vamos a insertar un titulo de manera dinamica -->
+
+    </div>
+  </body>
+</html>
+
+<script src="net-req.js" type="text/javascript"></script>
+
+<!--<script>
+    
+    window.addEventListener("DOMContentLoaded", async() => {
+    const data = await fetch("https://jsonplaceholder.typicode.com/todos/4");
+    const jsonData = await data.json();
+
+    //Creamos una isntancia donde establecemos un titulo y un input dependientes de los datos de la url.
+    const titleData = document.createElement("h2");
+    titleData.textContent = `title: ${jsonData.title}`  //Añadimos el contenido al elemento
+    const checkboxData = document.createElement("input");
+    checkboxData.type = "checkbox";
+    checkboxData.checked = jsonData.completed;
+
+    //Creamos los hijos del div llamandole por Id y creando una constante
+    const container = document.getElementById("container");
+    container.appendChild(titleData);
+    container.appendChild(checkboxData);
+
+    console.log(container);
+    } );
+
+    async function TodoData(){
+
+    //Creamos una constante con los datos que traemos de la url, esperando a que lleguen para evitar un error.
+    const data = await fetch("https://jsonplaceholder.typicode.com/todos/4");
+    const jsonData = await data.json();
+
+    //Creamos una isntancia donde establecemos un titulo y un input dependientes de los datos de la url.
+    const titleData = document.createElement("h2");
+    titleData.textContent = `title: ${jsonData.title}`  //Añadimos el contenido al elemento
+    const checkboxData = document.createElement("input");
+    checkboxData.type = "checkbox";
+    checkboxData.checked = jsonData.completed;
+
+    //Creamos los hijos del div llamandole por Id y creando una constante
+    const container = document.getElementById("container");
+    container.appendChild(titleData);
+    container.appendChild(checkboxData);
+
+    console.log(container);
+}
+
+</script>-->
